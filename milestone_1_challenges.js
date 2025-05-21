@@ -53,7 +53,7 @@ console.log(findLargest(-1, -5, -3));
 //challenge 7 : BMI Calculator
 function calculateBMI(weight, height) {
   const bmiRaw = weight / (height * height);
-  const bmi = Math.round(bmiRaw * 10) / 10; 
+  const bmi = Math.round(bmiRaw * 10) / 10;
   let category = "";
 
   if (bmi < 18.5) {
@@ -69,5 +69,23 @@ function calculateBMI(weight, height) {
   return "Your BMI is " + bmi + " - " + category;
 }
 
-console.log(calculateBMI(68, 1.75));
-console.log(calculateBMI(85, 1.8));
+//console.log(calculateBMI(68, 1.75));
+//console.log(calculateBMI(85, 1.8));
+
+//challenge 8 : Greeting Based on Time
+function greetUser(name, hour) {
+  if (hour >= 5 && hour <= 11) {
+    return `Good morning, ${name}!`;
+  } else if (hour >= 12 && hour <= 17) {
+    return `Good afternoon, ${name}!`;
+  } else if (hour >= 18 && hour <= 21) {
+    return `Good evening, ${name}!`;
+  } else {
+    return `Good night, ${name}!`;
+  }
+}
+
+console.log(greetUser("Alice", "7"));
+console.log(greetUser("Alice", "13"));
+console.log(greetUser("Alice", "20"));
+console.log(greetUser("Alice", "23"));
