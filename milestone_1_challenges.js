@@ -11,5 +11,13 @@ function convert(min) {
   return min * 60;
 }
 
-console.log(convert(5));
-console.log(convert(2));
+//console.log(convert(5));
+//console.log(convert(2));
+
+//challenge 3: Perimeter of a Rectangle
+function findPerimeter(length, width) {
+  return 2 * (length + width);
+}
+
+console.log(findPerimeter(6, 7));
+console.log(findPerimeter(20, 10));
