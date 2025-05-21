@@ -141,7 +141,20 @@ function powerUp(num, times) {
   return result;
 }
 
-console.log(powerUp(2, 3));
-console.log(powerUp(5, 0));
-console.log(powerUp(3, 4));
-console.log(powerUp(0));
+//console.log(powerUp(2, 3));
+//console.log(powerUp(5, 0));
+//console.log(powerUp(3, 4));
+//console.log(powerUp(0));
+
+//challenge 13 : Factorial Calculator
+function factorial(n) {
+  let res = 1;
+  for (let i = 2; i <= n; i++) {
+    res *= i;
+  }
+  return res;
+}
+
+console.log(factorial(0));
+console.log(factorial(4));
+console.log(factorial(6));
