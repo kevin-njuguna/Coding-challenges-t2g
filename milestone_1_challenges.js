@@ -155,6 +155,21 @@ function factorial(n) {
   return res;
 }
 
-console.log(factorial(0));
-console.log(factorial(4));
-console.log(factorial(6));
+//console.log(factorial(0));
+//console.log(factorial(4));
+//console.log(factorial(6));
+
+//challenge 14 : Multiple Sum
+function sumMultiples(n, divisor) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % divisor === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+
+console.log(sumMultiples(10, 2));
+console.log(sumMultiples(15, 3));
+console.log(sumMultiples(7, 5));
