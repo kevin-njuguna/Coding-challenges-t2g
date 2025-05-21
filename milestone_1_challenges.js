@@ -27,8 +27,8 @@ function isNegative(num) {
   return num < 0;
 }
 
-console.log(isNegative(-23));
-console.log(isNegative(55));
+//console.log(isNegative(-23));
+//console.log(isNegative(55));
 
 //challenge 5 : Can I Drive
 function canDrive(name, age) {
@@ -47,8 +47,8 @@ function findLargest(a, b, c) {
 }
 
 //console.log(findLargest(5, 9, 3));
-console.log(findLargest(10, 10, 10));
-console.log(findLargest(-1, -5, -3));
+//console.log(findLargest(10, 10, 10));
+//console.log(findLargest(-1, -5, -3));
 
 //challenge 7 : BMI Calculator
 function calculateBMI(weight, height) {
@@ -85,10 +85,10 @@ function greetUser(name, hour) {
   }
 }
 
-console.log(greetUser("Alice", "7"));
-console.log(greetUser("Alice", "13"));
-console.log(greetUser("Alice", "20"));
-console.log(greetUser("Alice", "23"));
+//console.log(greetUser("Alice", "7"));
+//console.log(greetUser("Alice", "13"));
+//console.log(greetUser("Alice", "20"));
+//console.log(greetUser("Alice", "23"));
 
 //challenge 9 : FizzBuzz
 function fizzBuzzCheck(number) {
@@ -98,10 +98,24 @@ function fizzBuzzCheck(number) {
   return number.toString();
 }
 
-console.log(fizzBuzzCheck(3));
+//console.log(fizzBuzzCheck(3));
 
-console.log(fizzBuzzCheck(10));
+//console.log(fizzBuzzCheck(10));
 
-console.log(fizzBuzzCheck(15));
+//console.log(fizzBuzzCheck(15));
 
-console.log(fizzBuzzCheck(7));
+//console.log(fizzBuzzCheck(7));
+
+//challenge 10 : Perimeter 2
+function perimeter(shape, number) {
+  if (shape === "s") {
+    return 4 * number;
+  } else if (shape === "c") {
+    return 6.28 * number;
+  } else {
+    return "Invalid shape";
+  }
+}
+
+console.log(perimeter("s", 7));
+console.log(perimeter("c", 4));
