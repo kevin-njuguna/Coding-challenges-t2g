@@ -38,5 +38,14 @@ function canDrive(name, age) {
     return `${name} is not old enough to drive yet.`
   }
 }
-console.log(canDrive("Jane", 22))
-console.log(canDrive("June", 12))
+//console.log(canDrive("Jane", 22))
+//console.log(canDrive("June", 12))
+
+//challenge 6 : Largest Number
+function findLargest(a, b, c) {
+  return Math.max(a, b, c)
+}
+
+console.log(findLargest(5, 9, 3))
+console.log(findLargest(10, 10, 10))
+console.log(findLargest(-1, -5, -3))
