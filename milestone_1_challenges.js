@@ -170,6 +170,19 @@ function sumMultiples(n, divisor) {
   return sum;
 }
 
-console.log(sumMultiples(10, 2));
-console.log(sumMultiples(15, 3));
-console.log(sumMultiples(7, 5));
+//console.log(sumMultiples(10, 2));
+//console.log(sumMultiples(15, 3));
+//console.log(sumMultiples(7, 5));
+
+//challenge 15 : Sum of digits
+function sumDigits(num) {
+  let sum = 0;
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return sum;
+}
+console.log(sumDigits(123));
+console.log(sumDigits(4567));
+console.log(sumDigits(0));
