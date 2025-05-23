@@ -137,7 +137,23 @@ function average(numbers) {
 }
 
 average([2, 4, 6, 8]);
-console.log(average([2, 4, 6, 8]));
+//console.log(average([2, 4, 6, 8]));
 
 average([]);
-console.log(average([]));
+//console.log(average([]));
+
+// Challenge 11: Linear Search
+function linearSearch(arr, value) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === value) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+linearSearch([5, 3, 7, 1, 4], 7);
+console.log(linearSearch([5, 3, 7, 1, 4], 7));
+
+linearSearch([5, 3, 7, 1, 4], 10);
+console.log(linearSearch([5, 3, 7, 1, 4], 10));
