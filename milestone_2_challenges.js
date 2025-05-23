@@ -186,7 +186,27 @@ function linearSearchAll(arr, value) {
 }
 
 linearSearchAll([5, 3, 7, 1, 4, 7], 7);
-console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
+//console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
 
 linearSearchAll([5, 3, 7, 1, 4], 10);
-console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
+//console.log(linearSearchAll([5, 3, 7, 1, 4], 10));
+
+// Challenge 14: Count Occurrences
+function countOccurrences(strings) {
+  let result = {};
+  for (let i = 0; i < strings.length; i++) {
+    let word = strings[i];
+    if (result[word]) {
+      result[word]++;
+    } else {
+      result[word] = 1;
+    }
+  }
+  return result;
+}
+
+countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]);
+
+console.log(
+  countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]),
+);
