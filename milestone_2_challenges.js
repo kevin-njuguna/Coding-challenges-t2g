@@ -93,4 +93,20 @@ function sumEvenNumbers(numbers) {
 }
 
 sumEvenNumbers([1, 2, 3, 4, 5, 6]);
-console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+//console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+function differenceEvenOdd(numbers) {
+  let evenNumSum = 0;
+  let OddNumSum = 0;
+  for (let num of numbers) {
+    if (num % 2 === 0) {
+      evenNumSum += num;
+    } else {
+      OddNumSum += num;
+    }
+  }
+  return evenNumSum - OddNumSum;
+}
+
+differenceEvenOdd([1, 2, 3, 4, 5, 6]);
+console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
