@@ -95,6 +95,7 @@ function sumEvenNumbers(numbers) {
 sumEvenNumbers([1, 2, 3, 4, 5, 6]);
 //console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
 
+//Challenge 8: Difference of Sum of Even and Odd Numbers
 function differenceEvenOdd(numbers) {
   let evenNumSum = 0;
   let OddNumSum = 0;
@@ -109,4 +110,18 @@ function differenceEvenOdd(numbers) {
 }
 
 differenceEvenOdd([1, 2, 3, 4, 5, 6]);
-console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
+//console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
+
+// Challenge 9: Count Truthy
+function countTruthy(obj) {
+  let count = 0;
+  for (let key in obj) {
+    if (Boolean(obj[key])) {
+      count++;
+    }
+  }
+  return count;
+}
+
+countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null });
+console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
