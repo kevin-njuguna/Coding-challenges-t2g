@@ -124,4 +124,20 @@ function countTruthy(obj) {
 }
 
 countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null });
-console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
+//console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
+
+// Challenge 10: Average of Numbers
+function average(numbers) {
+  if (numbers.length === 0) return 0;
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum / numbers.length;
+}
+
+average([2, 4, 6, 8]);
+console.log(average([2, 4, 6, 8]));
+
+average([]);
+console.log(average([]));
