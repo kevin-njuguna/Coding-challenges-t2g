@@ -65,4 +65,18 @@ function countProperties(obj) {
 }
 
 countProperties({ name: "Alice", age: 25, city: "Paris" });
-console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+//console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+
+// Challenge 6: Filter by Length
+function filterByLength(strings, minLength) {
+  let result = [];
+  for (let i = 0; i < strings.length; i++) {
+    if (strings[i].length >= minLength) {
+      result.push(strings[i]);
+    }
+  }
+  return result;
+}
+
+filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5);
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
